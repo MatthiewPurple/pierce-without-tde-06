@@ -15,7 +15,12 @@ public class PierceWithoutTDE06 : MelonMod
     {
         public static void Postfix(ref int no, ref bool __result)
         {
-            if (no == 2241) __result = true; // If the flag checked is the one responsible for unlocking Pierce, return true
+            // Checks the flag responsible for unlocking Pierce
+            if (no == 2241)
+            {
+                if (!__result) __result = true; // Artificially makes it obtainable
+                else tblHearts.fclHeartsTbl[1].Skill[5].TargetLevel = 21; // If unlocked normally, you can get it early
+            }
         }
     }
 
