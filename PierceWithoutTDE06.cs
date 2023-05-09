@@ -3,7 +3,7 @@ using HarmonyLib;
 using Il2Cpp;
 using pierce_without_tde_06;
 
-[assembly: MelonInfo(typeof(PierceWithoutTDE06), "Pierce without TDE (ver. 0.6)", "1.0.0", "Matthiew Purple")]
+[assembly: MelonInfo(typeof(PierceWithoutTDE06), "Pierce without TDE (ver. 0.6)", "1.0.1", "Matthiew Purple")]
 [assembly: MelonGame("アトラス", "smt3hd")]
 
 namespace pierce_without_tde_06;
