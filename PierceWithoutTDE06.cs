@@ -27,6 +27,6 @@ public class PierceWithoutTDE06 : MelonMod
     // When booting the game
     public override void OnInitializeMelon()
     {
-        tblHearts.fclHeartsTbl[1].Skill[5].TargetLevel = 80; // Make Pierce obtainable at level 80 instead of level 21
+        tblHearts.fclHeartsTbl[1].Skill[5].TargetLevel = 90; // Make Pierce obtainable at level 90 instead of level 21
     }
 }
